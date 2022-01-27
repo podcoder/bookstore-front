@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import HomePage from "@/view/home/HomePage.vue";
 </script>
 
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <HomePage/>
+  <router-link to="/">Home</router-link> | 
+  <router-link to="/about">About</router-link>
+  <router-view></router-view>
 </template>
 
 <style>
